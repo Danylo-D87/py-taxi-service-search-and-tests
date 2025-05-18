@@ -37,7 +37,7 @@ class ListViewTests(TestCase):
         Driver.objects.create_user(
             username="specialdriver",
             password="pass",
-            license_number="LICX"
+            license_number="LIC00003"
         )
 
     def setUp(self):
