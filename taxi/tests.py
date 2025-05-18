@@ -28,7 +28,7 @@ class ListViewTests(TestCase):
             Driver.objects.create_user(
                 username=f"driver{i}",
                 password="pass",
-                license_number=f"LIC{i}"
+                license_number=f"LIC{str(i + 1).zfill(5)}"  # LIC00001, LIC00002, ...
             )
 
         # Додаткові для пошуку
